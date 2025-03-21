@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Porsche</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.cdnfonts.com/css/911-porscha" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <section>
+            <a href="../index.html">
+                <img src="../img/logo-porsche.png" alt="logo-porsche">
+            </a>
+
+            <nav class="menu">
+                <a href="../indexl.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#" onclick="showModal()">Adress</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="box-about">
+        <h2 class="title"><span>About</span> Us</h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Our history</h3>
+                <p>Porsche was founded in 1931 by Ferdinand Porsche and has become an iconic brand in the automotive industry. Known for their sleek design and engineering excellence, Porsche continues to lead in the production of luxury sports cars, SUVs, and sedans.</p>
+            </div>
+            <div class="about-img">
+                <img src="../img/prosche2.jpg" alt="porsche-history">
+            </div>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="../img/porsche1.jpg" alt="porsche-engine">
+            </div>
+            <div class="about-text">
+                <h3>Engineering and Innovation</h3>
+                <p>Porsche's commitment to innovation is reflected in their state-of-the-art engineering. From powerful engines to groundbreaking technology, every Porsche is a masterpiece of precision and performance.</p>
+            </div>
+        </div>
+
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Why Porsche?</h3>
+                <p>Driving a Porsche is an experience unlike any other. It’s not just about speed, but about precision, comfort, and the timeless aesthetic that defines the brand.</p>
+            </div>
+            <div class="about-img">
+                <video src="../videos/porsche.mp4" muted autoplay loop alt="porsche-driving" width="100%"></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal e Mask copiados da index.html -->
+    <div class="modal">
+        <h3 class="title"><span>Us</span> Adrees</h3>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10501.28142364069!2d8.891876535165746!3d48.85210126251758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47976348166de05f%3A0xe5b7cb4ac391609d!2sPorsche%20Development%20Center!5e0!3m2!1spt-BR!2sbr!4v1742518334966!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mask-map" onclick="hideModal()"></div>
+
+    <script src="../scripts.js"></script>
+</body>
+
+</html>
